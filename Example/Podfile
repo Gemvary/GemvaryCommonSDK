@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'GemvaryCommonSDK_Example' do
+  pod 'GemvaryCommonSDK', :path => '../'
+
+  target 'GemvaryCommonSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
