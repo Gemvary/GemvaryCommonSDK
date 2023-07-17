@@ -21,17 +21,19 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/songmenglong/GemvaryCommonSDK'
+  s.homepage         = 'https://github.com/Gemvary/GemvaryCommonSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'songmenglong' => 'songmenglong@gemvary.com' }
-  s.source           = { :git => 'https://github.com/songmenglong/GemvaryCommonSDK.git', :tag => s.version.to_s }
+  s.author           = { 'songmenglong' => 'apple@gemvary.com' }
+  s.source           = { :git => 'https://github.com/Gemvary/GemvaryCommonSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'GemvaryCommonSDK/Classes/**/*'
-  
+#  s.source_files = 'GemvaryCommonSDK/Classes/**/*'
+  s.vendored_frameworks = "GemvaryCommonSDK/Frameworks/*.framework"
+  s.swift_versions = ['5.0']
+
   # s.resource_bundles = {
   #   'GemvaryCommonSDK' => ['GemvaryCommonSDK/Assets/*.png']
   # }

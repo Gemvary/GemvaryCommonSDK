@@ -1,0 +1,11 @@
+framework module GemvaryCommonSDK {
+  umbrella header "GemvaryCommonSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module GemvaryCommonSDK.Swift {
+  header "GemvaryCommonSDK-Swift.h"
+  requires objc
+}

@@ -1,5 +1,5 @@
 import XCTest
-import GemvaryCommonSDK
+//import GemvaryCommonSDK
 
 class Tests: XCTestCase {
     
